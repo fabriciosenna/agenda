@@ -48,7 +48,7 @@ class AlunoAPI: NSObject {
     // MARK: DELETE
     
     func deletaAluno(id:String){
-        Alamofire.request("http://localhost:8080/api/aluno/",method: .delete).responseJSON {(resposta) in switch resposta.result{
+        Alamofire.request("http://localhost:8080/api/aluno/\(id)",method: .delete).responseJSON {(resposta) in switch resposta.result{
                 case .failure:
                     print(resposta.result.error!)
                 break

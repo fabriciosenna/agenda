@@ -57,8 +57,6 @@ class AlunoDAO: NSObject {
         aluno?.setValue(dicionarioDeAluno["telefone"], forKey: "telefone")
         aluno?.setValue(dicionarioDeAluno["site"], forKey: "site")
 
-
-        
         guard let nota = dicionarioDeAluno["nota"] else { return }
         
         if (nota is String) {
@@ -69,6 +67,11 @@ class AlunoDAO: NSObject {
             aluno?.setValue((conversaoDeNota as NSString).doubleValue, forKey: "nota")
         }
         
+        atualizaContexto()
+    }
+    
+    func deletaAluno(aluno: Aluno){
+        contexto.delete(aluno)
         atualizaContexto()
     }
     
