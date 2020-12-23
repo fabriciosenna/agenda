@@ -31,6 +31,7 @@
 		DE9CAD5E9B9136DED2DA173A /* Pods_Agenda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD2E12ABDE38F1762A97ED70 /* Pods_Agenda.framework */; };
 		DFD0F3A22593B2A4005D2AFD /* LigacaoTelefonica.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD0F3A12593B2A4005D2AFD /* LigacaoTelefonica.swift */; };
 		DFD0F3A42593B462005D2AFD /* Safari.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD0F3A32593B462005D2AFD /* Safari.swift */; };
+		DFD0F3A62593BAC2005D2AFD /* Filtro.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD0F3A52593BAC2005D2AFD /* Filtro.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		BD2E12ABDE38F1762A97ED70 /* Pods_Agenda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Agenda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFD0F3A12593B2A4005D2AFD /* LigacaoTelefonica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LigacaoTelefonica.swift; sourceTree = "<group>"; };
 		DFD0F3A32593B462005D2AFD /* Safari.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safari.swift; sourceTree = "<group>"; };
+		DFD0F3A52593BAC2005D2AFD /* Filtro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filtro.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 				658B1AA72006456B006D944C /* AutenticacaoLocal.swift */,
 				DFD0F3A12593B2A4005D2AFD /* LigacaoTelefonica.swift */,
 				DFD0F3A32593B462005D2AFD /* Safari.swift */,
+				DFD0F3A52593BAC2005D2AFD /* Filtro.swift */,
 			);
 			path = Componentes;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				03AA176D1FC8515A003CB2B8 /* AlunoViewController.swift in Sources */,
 				65AB2CA820470DA000F07B9B /* AlunoAPI.swift in Sources */,
 				65F277D92006901C00A8F1BF /* Pino.swift in Sources */,
+				DFD0F3A62593BAC2005D2AFD /* Filtro.swift in Sources */,
 				65AB2CB420471F0400F07B9B /* AlunoDAO.swift in Sources */,
 				03AA17661FC84353003CB2B8 /* HomeTableViewController.swift in Sources */,
 				03AA17561FC84154003CB2B8 /* Agenda.xcdatamodeld in Sources */,

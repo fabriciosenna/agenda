@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SafariServices
 
 class HomeTableViewController: UITableViewController, UISearchBarDelegate {
     
@@ -120,11 +119,15 @@ class HomeTableViewController: UITableViewController, UISearchBarDelegate {
     // MARK: - SearchBarDelegate
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-
+        if let texto = searchBar.text{
+            alunos = Filtro().filtraAlunos(listaDeAlunos: alunos, texto: texto)
+        }
+        tableView.reloadData()
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-
+        alunos = AlunoDAO().recuperaAlunos()
+        tableView.reloadData()
     }
     
     
